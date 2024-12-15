@@ -4,6 +4,7 @@ body {
     background-image: url(https://capacitacion.uc.cl/images/cursos/X_tipos_de_lenguaje_de_programaci%C3%B3n_m%C3%A1s_buscados_por_las_empresas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
     
     color: aliceblue;
 }
