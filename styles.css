@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-family: Montserrat;
+    background-image: url(https://capacitacion.uc.cl/images/cursos/X_tipos_de_lenguaje_de_programaci%C3%B3n_m%C3%A1s_buscados_por_las_empresas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: aliceblue;
+}
+
+
+
+.header {
+    background-color: rgba(48, 58, 197, 0.342);
+    box-shadow: 0px 0px 30px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    animation: change-color 5s;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Cambia de fila a columna */
+        justify-content: center;
+        padding: 15px;
+    }
+}
+
+
+/* Ajustes para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+        text-align: center; /* Asegura que los elementos se centren en pantallas pequeñas */
+    }
+}
+
+@keyframes change-color {
+    from {background: rgba(0, 1, 2, 0.801);}
+    to {background: rgba(48, 58, 197, 0.342);}
+}
+
+.nombre {
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 20px;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.nombre:hover {
+    color: aliceblue;
+    transform: scale(1.1);
+}
+
+
+.links {
+    text-decoration: none;
+    color: aliceblue;
+    transition-duration: 0.5s;
+}
+
+.links:hover {
+    transform: scale(1.1);
+}
+
+.links:last-child {
+    background-color: rgb(42, 15, 165);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.links:last-child:hover {
+    background-color: rgb(255, 255, 255);
+    color: blue;
+}
+
+/*SECCIÓN 2*/
+
+.container-text {
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    font-size: 42px;
+    color: aliceblue;
+    transition-duration: 1s;
+    }
+    
+
+    .container-text:hover {
+        color: rgba(0, 68, 255, 0.781);
+    }
+
+
+section {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+
+.sobremi {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+    transition-duration: 1s;
+    animation: slideInFromLeft 1s ease-out forwards;
+    
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 768px) {
+    .sobremi {
+        flex-direction: column; /* Cambia el layout a columna */
+        padding: 20px; /* Ajusta el espacio interno */
+        max-width: 90%; /* Reduce el ancho máximo */
+    }
+}
+
+
+
+@keyframes slideInFromLeft {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+    
+}
+
+
+
+.sobremi:hover {
+    background-color: rgba(32, 32, 107, 0.795);
+    transform: scale(1.1);
+}
+
+
+.image {
+    width: 120px;
+    border-radius: 15px;
+    margin-right: 20px;
+    transition-duration: 0.5s;
+    
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.skills {
+    background-color: rgba(0, 0, 0, 0.603);
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin: auto;
+    box-sizing: border-box;
+        padding: 15px;
+        border-radius: 20px;
+        padding: 20px;
+        transition-duration: 1s;
+        animation: slideInFromLeft 1s ease-out forwards;
+
+}
+
+.skills:hover {
+    background-color: rgba(32, 32, 107, 0.795);
+    
+}
+
+
+.skills-images {
+width: 50px;
+    margin: 4px;
+    
+    transition-duration: 0.6s;
+    margin-top: 10px;
+}
+
+.skills-images:hover {
+    transform: scale(1.1);
+}
